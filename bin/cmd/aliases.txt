@@ -1,0 +1,23 @@
+gaa=git add -A $*
+
+gb=git branch $*
+
+gco=git checkout $*
+gcob=git checkout -b $*
+
+gc=git commit $*
+gcm=git commit -m $*
+gca=git commit --amend $*
+gcah=git commit --amend -C HEAD $*
+
+gd=git diff -- $*
+gds=git diff --cached -- $*
+
+grb=git rebase $*
+grbi=git rebase -i $*
+
+grs=git reset -- $*
+
+grm=git rm $*
+
+gru=git remote update -p $*
