@@ -11,11 +11,13 @@
 
 c=cd $* $T ls
 
+ga=%GIT_SWISH_EXE% git_add $*
 gaa=git add -A $*
+gap=%GIT_SWISH_EXE% git_add -p $*
 
 gb=git branch $*
 
-gco=git checkout $*
+gco=%GIT_SWISH_EXE% git_checkout $*
 gcob=git checkout -b $*
 
 gc=git commit $*
@@ -23,14 +25,16 @@ gcm=git commit -m $*
 gca=git commit --amend $*
 gcah=git commit --amend -C HEAD $*
 
-gd=git diff -- $*
-gds=git diff --cached -- $*
+gd=%GIT_SWISH_EXE% git_diff $*
+gds=%GIT_SWISH_EXE% git_diff --cached -- $*
 
 grb=git rebase $*
 grbi=git rebase -i $*
 
-grs=git reset -- $*
+grs=%GIT_SWISH_EXE% git_reset -- $*
 
-grm=git rm $*
+grm=%GIT_SWISH_EXE% git_rm $*
 
 gru=git remote update -p $*
+
+gs=%GIT_SWISH_RESULT_EXE% git_status
