@@ -8,7 +8,12 @@ The idea is based on [SCM Breeze][3] which is available for bash and zsh termina
 ## Installation
 
 [Cmder][1] and [Ruby][2] are required.
-Simply clone this Git repository and execute `path\to\repo\bin\git-swish-setup.cmd` in your Cmder terminal.
+No dedicated installation is currently provided.
+To install:
+
+1. Clone this Git repository.
+2. Copy `clink\git-swish.lua` to `<cmder>\config`.
+3. Execute `path\to\repo\bin\git-swish-setup.cmd` in your Cmder terminal whenever you want to use it.
 
 ## Usage
 
