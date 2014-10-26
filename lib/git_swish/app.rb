@@ -43,7 +43,7 @@ module Git::Swish
       cmd = @command.split('_')
       @args.map do |arg|
         if arg =~ /[0-9]+/
-          expanded = ENV["SWISHARG#{arg}"]
+          expanded = ENV["e#{arg}"]
           raise "No argument for #{arg} exists!" if expanded.nil?
           cmd << expanded
         else

@@ -198,7 +198,7 @@ module Git::Swish
     puts @output_files.each_with_index.map { |f,i|
       path = f.start_with?("~") ? f.sub(/~/, '') : File.join(@project_root, f)
       path.gsub!("/",'\\')
-      "SWISHARG#{i+1}=\"#{path}\""
+      "e#{i+1}=\"#{path}\""
     }.join(',')
   end
 
