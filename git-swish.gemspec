@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "git-swish"
   spec.version       = Git::Swish::VERSION
   spec.authors       = ["Michael Zoech"]
-  spec.email         = ["michi.zoech@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.email         = ["michi.zoech+git-swish@gmail.com"]
+  spec.summary       = %q{Enhance your Git command-line experience on Windows}
+  spec.description   = %q{}
   spec.homepage      = ""
   spec.license       = "Apache License, Version 2.0"
 
