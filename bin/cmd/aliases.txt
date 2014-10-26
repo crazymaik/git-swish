@@ -16,6 +16,8 @@ gaa=git add -A $*
 gap=%GIT_SWISH_EXE% git_add -p $*
 
 gb=git branch $*
+gbd=git branch -d $*
+gbD=git branch -D $*
 
 gco=%GIT_SWISH_EXE% git_checkout $*
 gcob=git checkout -b $*

@@ -56,6 +56,8 @@ The following shortcuts support number shortcuts:
 
 * `gaa`: `git add -A`
 * `gb`: `git branch`
+* `gbd`: `git branch -d`
+* `gbD`: `git branch -D`
 * `gcob`: `git checkout -b`
 * `gc`: `git commit`
 * `gcm`: `git commit -m `
