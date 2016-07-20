@@ -83,7 +83,7 @@ The following shortcuts support number shortcuts:
 
 ## License
 
-    Copyright 2014 Michael Zoech
+    Copyright 2016 Michael Zoech
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
