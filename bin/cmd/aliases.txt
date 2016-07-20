@@ -30,6 +30,8 @@ gcah=git commit --amend -C HEAD $*
 gd=%GIT_SWISH_EXE% git_diff $*
 gds=%GIT_SWISH_EXE% git_diff --cached -- $*
 
+gps=git push $*
+
 grb=git rebase $*
 grbi=git rebase -i $*
 

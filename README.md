@@ -68,6 +68,7 @@ The following shortcuts support number shortcuts:
 * `gcm`: `git commit -m `
 * `gca`: `git commit --amend`
 * `gcah`: `git commit --amend -C HEAD`
+* `gps`: `git push`
 * `grb`: `git rebase`
 * `grbi`: `git rebase -i`
 * `gru`: `git remote update -p`
