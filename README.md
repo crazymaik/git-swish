@@ -1,7 +1,7 @@
 # git-swish
 
-Enhance your command-line experience on Windows with this set of aliases and scripts.
-It provides some common aliases when traversing directories, using Git, and numbered file shortcuts for Git.
+Enhance your Git command-line experience on Windows with this set of aliases and scripts.
+It provides some common aliases and numbered file shortcuts for Git.
 git-swish is an add-on to [Cmder][1] for Windows.
 The idea is based on [SCM Breeze][3] which is available for bash and zsh terminals.
 
@@ -72,13 +72,6 @@ The following shortcuts support number shortcuts:
 * `grb`: `git rebase`
 * `grbi`: `git rebase -i`
 * `gru`: `git remote update -p`
-
-### Aliases for Traversing Directories
-
-* `..`: `cd ..`
-* `...`: `cd ..\..`
-* `..X` where `X` is a digit: Travers `X` number of directories up.
-* `c <dir>` : Change into `<dir>` and print directory contents.
 
 ## Contributing
 
