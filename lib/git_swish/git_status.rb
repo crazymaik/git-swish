@@ -62,10 +62,10 @@ module Git::Swish
 
   # If no changes, just display green no changes message and exit here
     if @git_status == ""
-      puts "%s#%s On branch: %s#{@branch}#{difference}  %s|  \033[0;32mNo changes (working directory clean)%s" % [
-          @c[:dark], @c[:rst], @c[:branch], @c[:dark], @c[:rst]
-      ]
-      exit
+      #puts "%s#%s On branch: %s#{@branch}#{difference}  %s|  \033[0;32mNo changes (working directory clean)%s" % [
+      #    @c[:dark], @c[:rst], @c[:branch], @c[:dark], @c[:rst]
+      #]
+      return
     end
 
 
