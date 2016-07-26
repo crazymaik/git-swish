@@ -1,19 +1,24 @@
 # git-swish
 
 Enhance your Git command-line experience on Windows with this set of aliases and scripts.
-It provides some common aliases and numbered file shortcuts for Git.
-git-swish is an add-on to [Cmder][1] for Windows.
-The idea is based on [SCM Breeze][3] which is available for bash and zsh terminals.
+The idea behind this project is based on [SCM Breeze][3] which is available for bash and zsh terminals.
+git-swish provides the following features:
+
+* Aliases for git commands.
+* Numbered file shortcuts.
+* Prompt completion when used in Cmder.
 
 ## Installation
 
-[Cmder][1] and [Ruby][2] are required.
+A [Ruby][2] installation is required and `ruby.exe` needs to be available on the `PATH`.
+Use [Cmder][1] if you want to take advantage of prompt completion.
 No dedicated installation is currently provided.
 To install:
 
 1. Clone this Git repository.
-2. Copy `clink\git-swish.lua` to `<cmder>\config`.
-3. Execute `path\to\repo\bin\git-swish-setup.cmd` in your Cmder terminal whenever you want to use it.
+2. (Optional) Copy `clink\git-swish.lua` to `<cmder>\config`.
+
+In your command prompt execute `path\to\repo\bin\git-swish-setup.cmd` whenever you want to use git-swish.
 
 ## Usage
 
@@ -47,7 +52,7 @@ Instead of typing the full file path, only the number has to be specified.
     #
     $ grs 1
 
-The following shortcuts support number shortcuts:
+The following shortcuts support numbered files:
 
 * `ga`: `git add`
 * `gap`: `git add -p`
