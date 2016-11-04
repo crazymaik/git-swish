@@ -52,7 +52,19 @@ Instead of typing the full file path, only the number has to be specified.
     #
     $ grs 1
 
-The following shortcuts support numbered files:
+Use number ranges to reference a range of files.
+
+    $ ga 1-4
+    $ gs
+    #
+    # Changes to be committed
+    #     modified:    [1] Gemfile
+    #     modified:    [2] README.md
+    #     modified:    [3] LICENSE.txt
+    #     modified:    [4] lib/git_swish/app.rb
+	$
+
+The following shortcuts support numbered files and numbered ranges:
 
 * `ga`: `git add`
 * `gap`: `git add -p`

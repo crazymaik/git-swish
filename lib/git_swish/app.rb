@@ -42,15 +42,24 @@ module Git::Swish
     def command_with_arg()
       cmd = @command.split('_')
       @args.map do |arg|
-        if arg =~ /[0-9]+/
-          expanded = ENV["e#{arg}"]
-          raise "No argument for #{arg} exists!" if expanded.nil?
-          cmd << expanded
+        case arg
+        when /^([0-9]+)$/
+          cmd << get_expanded_filepath($1)
+        when /^([0-9]+)-([0-9]+)$/
+          ($1..$2).each do |i|
+            cmd << get_expanded_filepath(i)
+          end
         else
           cmd << arg
         end
       end
       system cmd.join(' ')
+    end
+
+    def get_expanded_filepath(number)
+      expanded = ENV["e#{number}"]
+      raise "No argument for #{number} exists!" if expanded.nil?
+      return expanded
     end
 
     def git_status()
